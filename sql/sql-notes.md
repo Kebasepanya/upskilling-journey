@@ -35,4 +35,10 @@ IN	To specify multiple possible values for a column
 
 
 ORDER BY 
-This is used to filter the results set in either ascending or descending after a query is run 
+This lets you order the results set by the column you want and you can order by either ascending or descending 
+
+The SQL AND and OR OPERATOR
+These are used to combine the conditions of the query 
+AND -Combines them and all the conditions need to be met
+OR - Is a selected values between one or two conditions. Not all the conditions need to be met
+
