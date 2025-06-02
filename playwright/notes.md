@@ -94,3 +94,68 @@ We use headless: false when:
 44:02 Continue 
 
 Cursor AI does not run the code by itself. you can run the following command in the Terminal (npx playwright test) which will execute the test for you.
+
+
+02/06/2025
+🧳 Test Package
+✅ What it is:
+A test package is a tool or library that provides the features needed to write, run, and manage automated tests.
+
+💡 Example in Playwright:
+In Playwright, the test package is:
+
+bash
+Copy
+Edit
+@playwright/test
+You install it using:
+
+bash
+Copy
+Edit
+npm install -D @playwright/test
+It gives you functions like:
+
+test() – to define a test
+
+expect() – to make assertions
+
+beforeEach() / afterEach() – for test setup/cleanup
+
+And the test runner itself (to execute your tests)
+
+📦 Think of it as:
+The toolbox that contains all the tools you need to build and run tests.
+
+📄 Test File
+✅ What it is:
+A test file is a regular JavaScript or TypeScript file that contains your actual test code.
+
+You create this file and write specific test cases inside it.
+
+💡 Example:
+A file like this:
+
+bash
+Copy
+Edit
+tests/example.spec.js
+might contain:
+
+js
+Copy
+Edit
+const { test, expect } = require('@playwright/test');
+
+test('page has correct title', async ({ page }) => {
+  await page.goto('https://example.com');
+  expect(await page.title()).toBe('Example Domain');
+});
+📦 Think of it as:
+A blueprint or instruction sheet that tells the test runner what to do.
+
+🧠 In Summary:
+Term	What It Is	Example
+Test Package	A library/tool for writing & running tests	@playwright/test
+Test File	A file you create to write test code	example.spec.js or login.test.ts
+
